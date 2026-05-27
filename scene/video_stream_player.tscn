@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://beftcfah0lywq"]
+
+[ext_resource type="VideoStream" uid="uid://de0bt1fntqrot" path="res://assets/test.ogv" id="1_cow04"]
+[ext_resource type="Script" uid="uid://dbghrymrngalt" path="res://script/cutscene.gd" id="2_kr2tm"]
+
+[node name="cutscene" type="VideoStreamPlayer" unique_id=327450991]
+offset_right = 1149.0
+offset_bottom = 653.0
+stream = ExtResource("1_cow04")
+autoplay = true
+expand = true
+script = ExtResource("2_kr2tm")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

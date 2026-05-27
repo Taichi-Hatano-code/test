@@ -1,0 +1,300 @@
+[gd_scene format=3 uid="uid://dj4a3cj7sdiyb"]
+
+[ext_resource type="Texture2D" uid="uid://bunc5oo61vqpi" path="res://assets/16279.jpg" id="1_oxi1f"]
+[ext_resource type="Script" uid="uid://bds1fynla3mj" path="res://script/menu_principal.gd" id="1_y80so"]
+[ext_resource type="Texture2D" uid="uid://drydudqsrkmml" path="res://assets/Gemini_Generated_Image_3c6j6h3c6j6h3c6j-Photoroom.png" id="2_m7b7d"]
+[ext_resource type="Texture2D" uid="uid://b0jop6ncyxdyn" path="res://assets/Gemini_Generated_Image_5e308i5e308i5e30-Photoroom.png" id="3_v77ak"]
+[ext_resource type="Texture2D" uid="uid://428lgkmsk53n" path="res://assets/Gemini_Generated_Image_fmfaw9fmfaw9fmfa-Photoroom.png" id="4_v77ak"]
+[ext_resource type="Texture2D" uid="uid://dq38fsg2qpnoo" path="res://assets/Gemini_Generated_Image_h1rdghh1rdghh1rd-Photoroom.png" id="5_wos37"]
+[ext_resource type="Texture2D" uid="uid://nkg0bo8yy6gg" path="res://assets/Gemini_Generated_Image_gdgkghgdgkghgdgk-Photoroom.png" id="5_y80so"]
+[ext_resource type="Texture2D" uid="uid://fvhplkh8nmg" path="res://assets/b37cb54acee04c7586ea1c59cecc424f-Photoroom.png" id="6_wud8p"]
+[ext_resource type="AudioStream" uid="uid://cx7mc71k3v6ge" path="res://assets/Game Menu Select Sound Effect - Sound Effect Database (youtube).mp3" id="7_o2y1f"]
+[ext_resource type="Script" uid="uid://bpvylwvvi0hfy" path="res://script/point_light_2d.gd" id="8_y80so"]
+[ext_resource type="Texture2D" uid="uid://c4qul61asc8c7" path="res://assets/Gemini_Generated_Image_33a3q933a3q933a3-Photoroom.png" id="9_wos37"]
+[ext_resource type="AudioStream" uid="uid://c0g35nkgg7w08" path="res://assets/Echoes of the Deep Gate (online-video-cutter.com).mp3" id="11_wud8p"]
+
+[sub_resource type="Animation" id="Animation_wud8p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/PointLight2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/PointLight2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(479, 61)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-217, 302)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackGroundd:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Opções:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Sprite2D:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_o2y1f"]
+resource_name = "entrada_menu"
+length = 7.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(5.1299996, 6.1499996, 6.9966664),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0.42365062, 0.42365065, 0.42365062, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/PointLight2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5.1299996, 6.13, 7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/PointLight2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(5.1, 6.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(479, 61), Vector2(485, 55)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackGroundd:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5.1, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0.21950102, 0.21950102, 0.21950102, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Opções:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5.1, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Sprite2D:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(5.1, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f3x37"]
+_data = {
+&"RESET": SubResource("Animation_wud8p"),
+&"entrada_menu": SubResource("Animation_o2y1f")
+}
+
+[node name="Control" type="Control" unique_id=1912837775]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_y80so")
+
+[node name="BackGroundd" type="TextureRect" parent="." unique_id=1772413530]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(0.5, 0.5)
+layout_mode = 0
+offset_right = 6060.0
+offset_bottom = 3630.0
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("1_oxi1f")
+
+[node name="Opções" type="TextureRect" parent="." unique_id=773164842]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 582.0
+offset_top = 327.0
+offset_right = 1082.0
+offset_bottom = 576.0
+texture = ExtResource("2_m7b7d")
+expand_mode = 1
+
+[node name="Start" type="TextureButton" parent="Opções" unique_id=1598401307]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 129.0
+offset_right = 206.0
+offset_bottom = 174.0
+pivot_offset = Vector2(60, 23)
+texture_normal = ExtResource("3_v77ak")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Options" type="TextureButton" parent="Opções" unique_id=1689020078]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 128.0
+offset_right = 327.0
+offset_bottom = 173.0
+pivot_offset = Vector2(60, 23)
+texture_normal = ExtResource("4_v77ak")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Exit" type="TextureButton" parent="Opções" unique_id=387320014]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 135.0
+offset_right = 428.0
+offset_bottom = 170.0
+pivot_offset = Vector2(45.815, 18)
+texture_normal = ExtResource("5_wos37")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Opções" unique_id=2063370189]
+stream = ExtResource("7_o2y1f")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=780198426]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = -217.0
+offset_top = 302.0
+offset_right = 451.0
+offset_bottom = 679.9973
+texture = ExtResource("5_y80so")
+expand_mode = 1
+
+[node name="PointLight2D" type="PointLight2D" parent="TextureRect" unique_id=762439226]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(479, 61)
+scale = Vector2(0.777, 0.734)
+color = Color(0.64449334, 0.5152161, 0.36633947, 1)
+texture = ExtResource("6_wud8p")
+script = ExtResource("8_y80so")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1838691905]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(723.00006, 196)
+scale = Vector2(0.5171875, 0.5569106)
+texture = ExtResource("9_wos37")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=252286937]
+libraries/ = SubResource("AnimationLibrary_f3x37")
+autoplay = &"entrada_menu"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1161969900]
+stream = ExtResource("11_wud8p")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=901686652]
+position = Vector2(576, 331)
+
+[connection signal="mouse_entered" from="Opções/Start" to="." method="_on_start_mouse_entered"]
+[connection signal="mouse_exited" from="Opções/Start" to="." method="_on_start_mouse_exited"]
+[connection signal="pressed" from="Opções/Start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="Opções/Options" to="." method="_on_options_mouse_entered"]
+[connection signal="mouse_exited" from="Opções/Options" to="." method="_on_options_mouse_exited"]
+[connection signal="pressed" from="Opções/Options" to="." method="_on_options_pressed"]
+[connection signal="mouse_entered" from="Opções/Exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="mouse_exited" from="Opções/Exit" to="." method="_on_exit_mouse_exited"]
+[connection signal="pressed" from="Opções/Exit" to="." method="_on_exit_pressed"]

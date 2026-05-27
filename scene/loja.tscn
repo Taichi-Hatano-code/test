@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dd7hnw8frvdpk"]
+
+[ext_resource type="Script" uid="uid://c4ph0nex8oxxj" path="res://script/loja.gd" id="1_kqghp"]
+[ext_resource type="Texture2D" uid="uid://dti1a2ctcwc1i" path="res://assets/1-Bit-Underground-Cave-Pixel-Backgrounds4-720x480.webp" id="2_hmf0p"]
+[ext_resource type="Texture2D" uid="uid://fasm7f820yy0" path="res://assets/pixil-frame-0 (6).png" id="5_7drka"]
+[ext_resource type="AudioStream" uid="uid://d4kg7y8u8v1vk" path="res://assets/Final fantasy 1 Pixel Remaster Battle Theme - Daniel Cortina (youtube).mp3" id="13_8f8om"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8hy7g"]
+texture = ExtResource("5_7drka")
+
+[node name="Node2D" type="Node2D" unique_id=1751232998]
+script = ExtResource("1_kqghp")
+
+[node name="background" type="Sprite2D" parent="." unique_id=2087943290]
+position = Vector2(604, 328.00003)
+scale = Vector2(1.7319444, 1.6541667)
+texture = ExtResource("2_hmf0p")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1495912247]
+position = Vector2(577, 323)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1593341156]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1327144271]
+offset_top = 469.0
+offset_right = 1154.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8hy7g")
+
+[node name="MenuItens" type="HBoxContainer" parent="CanvasLayer/Panel" unique_id=1577095972]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 0
+offset_left = -6.0
+offset_top = 13.0
+offset_right = 1155.0
+offset_bottom = 164.0
+theme_override_constants/separation = 180
+alignment = 1
+
+[node name="pocao" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=780018198]
+layout_mode = 2
+text = "TEste"
+
+[node name="dano" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=1985829645]
+layout_mode = 2
+text = "TEST2"
+
+[node name="vida" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=2129304110]
+layout_mode = 2
+text = "TEST3
+"
+
+[node name="Voltar" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=82680549]
+layout_mode = 2
+text = "TEST4"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=440901311]
+stream = ExtResource("13_8f8om")
+volume_db = -20.429
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Panel/MenuItens/pocao" to="." method="_on_pocao_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/MenuItens/dano" to="." method="_on_dano_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/MenuItens/vida" to="." method="_on_vida_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/MenuItens/Voltar" to="." method="_on_voltar_pressed"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

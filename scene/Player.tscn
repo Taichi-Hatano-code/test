@@ -1,0 +1,192 @@
+[gd_scene format=3 uid="uid://d3s8d4lyiy462"]
+
+[ext_resource type="Script" uid="uid://biuqfue6pgcl1" path="res://script/Player.gd" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://cl22wyvxmsmd5" path="res://assets/pixilart-sprite.png" id="2_waelg"]
+[ext_resource type="Texture2D" uid="uid://8w3qtjyqfdcl" path="res://assets/char2.png" id="4_82gks"]
+[ext_resource type="Texture2D" uid="uid://dleq83ilenqpd" path="res://assets/pixil-frame-0 (16).png" id="4_dc1pm"]
+[ext_resource type="AudioStream" uid="uid://b650us4iym4eh" path="res://assets/Walk On Concrete - Sound Effect for editing - Sound Library (youtube).mp3" id="5_82gks"]
+[ext_resource type="Texture2D" uid="uid://t1wupxi1ks8d" path="res://assets/B.png" id="5_dc1pm"]
+[ext_resource type="Texture2D" uid="uid://dhpqw6yp4338j" path="res://assets/U.png" id="6_ea7gk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhfnw"]
+size = Vector2(14, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82gks"]
+atlas = ExtResource("2_waelg")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dc1pm"]
+atlas = ExtResource("2_waelg")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea7gk"]
+atlas = ExtResource("2_waelg")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqvfm"]
+atlas = ExtResource("2_waelg")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63jwq"]
+atlas = ExtResource("2_waelg")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6ll3"]
+atlas = ExtResource("2_waelg")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqto2"]
+atlas = ExtResource("2_waelg")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l60v7"]
+atlas = ExtResource("2_waelg")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c2vjh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82gks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dc1pm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea7gk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqvfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63jwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6ll3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqto2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l60v7")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 10.0
+}]
+
+[sub_resource type="Curve" id="Curve_82gks"]
+_data = [Vector2(0.15384616, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_82gks"]
+colors = PackedColorArray(0.959721, 0.75425947, 0, 1, 0.67959034, 0.35823613, 5.7756904e-07, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kqvfm"]
+light_mode = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf0yl"]
+atlas = ExtResource("5_dc1pm")
+region = Rect2(0, 0, 122, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2vjh"]
+atlas = ExtResource("6_ea7gk")
+region = Rect2(0, 0, 113, 82)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w11jy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xf0yl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2vjh")
+}],
+"loop": true,
+"name": &"bu",
+"speed": 2.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1858434574 groups=["Player", "player"]]
+script = ExtResource("1_xhfnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=233228396]
+shape = SubResource("RectangleShape2D_xhfnw")
+
+[node name="Pernas_Sprite" type="AnimatedSprite2D" parent="." unique_id=2044719369]
+rotation = 1.5707964
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_c2vjh")
+animation = &"Walk"
+frame = 5
+frame_progress = 0.7052827
+
+[node name="Tronco_Sprite" type="Sprite2D" parent="." unique_id=563386395]
+position = Vector2(3.8146973e-06, 9.536743e-07)
+rotation = 1.5707964
+scale = Vector2(2, 2)
+texture = ExtResource("4_82gks")
+
+[node name="Node2D" type="Node2D" parent="Tronco_Sprite" unique_id=1433786076]
+position = Vector2(4, -2.499998)
+
+[node name="PointLight2D" type="PointLight2D" parent="Tronco_Sprite/Node2D" unique_id=1328880755]
+position = Vector2(-4.0000005, 2.5)
+scale = Vector2(0.30181283, 0.29419258)
+color = Color(0.67307913, 0.52296275, 0, 1)
+shadow_enabled = true
+shadow_filter = 1
+texture = ExtResource("4_dc1pm")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Tronco_Sprite/Node2D" unique_id=607641708]
+scale = Vector2(0.30181283, 0.29419258)
+amount = 5
+speed_scale = 1.5
+emission_shape = 1
+emission_sphere_radius = 2.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 30.0
+damping_min = 10.0
+damping_max = 30.0
+scale_amount_min = 2.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_82gks")
+color_ramp = SubResource("Gradient_82gks")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=73314888]
+zoom = Vector2(3, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1627590950]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer" unique_id=1980234934]
+anchors_preset = -1
+anchor_left = -0.0078125
+anchor_right = 0.07638889
+anchor_bottom = 0.07716049
+offset_left = 60.0
+offset_top = 31.0
+offset_right = 72.0
+offset_bottom = 81.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer" unique_id=1349199764]
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+size = Vector2i(100, 100)
+render_target_update_mode = 4
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="CanvasLayer/SubViewportContainer/SubViewport" unique_id=1511135171]
+material = SubResource("CanvasItemMaterial_kqvfm")
+position = Vector2(43, 25)
+scale = Vector2(0.5409836, 0.58064514)
+sprite_frames = SubResource("SpriteFrames_w11jy")
+animation = &"bu"
+autoplay = "bu"
+frame_progress = 0.41583472
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=260171951]
+position = Vector2(-2, 1)
+stream = ExtResource("5_82gks")
+bus = &"abafado"

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://djwajfhlytnu2"]
+
+[ext_resource type="Script" uid="uid://cootrwal2fqmo" path="res://script/mob.gd" id="1_0a0b6"]
+[ext_resource type="Texture2D" uid="uid://cklm57cdk2kew" path="res://assets/pixil-frame-0 (4).png" id="2_0a0b6"]
+[ext_resource type="AudioStream" uid="uid://f65uvc4d4bxa" path="res://assets/mob.mp3" id="3_25hoh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0a0b6"]
+size = Vector2(124, 122)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=243322165]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_0a0b6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1574545418]
+position = Vector2(0, 1.9073486e-06)
+scale = Vector2(5.0000005, 3.7500002)
+texture = ExtResource("2_0a0b6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=257501715]
+stream = ExtResource("3_25hoh")
+volume_db = 16.714
+max_distance = 3031.0
+attenuation = 2.0
+bus = &"abafado"
+
+[node name="Timer" type="Timer" parent="." unique_id=924870596]
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=444029495]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1650166240]
+shape = SubResource("RectangleShape2D_0a0b6")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=2125108171]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

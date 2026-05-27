@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bpycryknujmau"]
+
+[ext_resource type="Script" uid="uid://bidqshwgyldwn" path="res://script/botao.gd" id="1_3vx4p"]
+[ext_resource type="AudioStream" uid="uid://bdqnauemlhqwx" path="res://assets/click.mp3" id="2_vk75b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vk75b"]
+size = Vector2(12, 12)
+
+[node name="Botao" type="Area2D" unique_id=1379131772]
+script = ExtResource("1_3vx4p")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1957982802]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2032798959]
+shape = SubResource("RectangleShape2D_vk75b")
+
+[node name="click" type="AudioStreamPlayer2D" parent="." unique_id=1741102776]
+stream = ExtResource("2_vk75b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://qij0uuxfujqm"]
+
+[ext_resource type="Script" uid="uid://dgfspfutene0x" path="res://script/bloco.gd" id="1_f4bxs"]
+[ext_resource type="Texture2D" uid="uid://bybmdl8avcyta" path="res://assets/pixil-frame-0 (2).png" id="2_f4bxs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpcup"]
+size = Vector2(16, 14.328125)
+
+[node name="Bloco" type="CharacterBody2D" unique_id=1525116041]
+script = ExtResource("1_f4bxs")
+textura_bloco = ExtResource("2_f4bxs")
+friccao = null
+id_identidade = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1836672790]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=942137894]
+shape = SubResource("RectangleShape2D_xpcup")

@@ -1,0 +1,17 @@
+# Arquivos temporários e de cache da Godot Engine
+.godot/
+
+# Arquivos de importação automática (o Godot reconstrói sozinho)
+*.import
+
+# Configurações locais do editor (específicas do seu computador)
+.export_presets.cfg
+export_presets.cfg
+
+# Arquivos de build/exportação automática (caso você gere o executável .exe ou .apk)
+build/
+dist/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db

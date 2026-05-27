@@ -1,0 +1,254 @@
+[gd_scene format=3 uid="uid://xo8epcvjmufv"]
+
+[ext_resource type="Script" uid="uid://181gk2yl8aj2" path="res://script/Batalha.gd" id="1_pth00"]
+[ext_resource type="Texture2D" uid="uid://dti1a2ctcwc1i" path="res://assets/1-Bit-Underground-Cave-Pixel-Backgrounds4-720x480.webp" id="2_cmmtb"]
+[ext_resource type="Texture2D" uid="uid://cklm57cdk2kew" path="res://assets/pixil-frame-0 (4).png" id="3_cwipj"]
+[ext_resource type="Texture2D" uid="uid://bq6pmcla4ro64" path="res://assets/pixil-frame-0 (3).png" id="4_cwbht"]
+[ext_resource type="Texture2D" uid="uid://fasm7f820yy0" path="res://assets/pixil-frame-0 (6).png" id="5_c8w5r"]
+[ext_resource type="Texture2D" uid="uid://brdcvneqnbvus" path="res://assets/pixil-frame-0 (espada).png" id="6_ic1y7"]
+[ext_resource type="Texture2D" uid="uid://c7nst0r6o3aod" path="res://assets/pixil-frame-0 (espada2).png" id="7_jsbqy"]
+[ext_resource type="Texture2D" uid="uid://dq1fkuo6tpuc4" path="res://assets/pixil-frame-0 (8).png" id="7_r7bl2"]
+[ext_resource type="Texture2D" uid="uid://cff3m4w4xny8" path="res://assets/pixil-frame-0 (9).png" id="8_r7bl2"]
+[ext_resource type="Texture2D" uid="uid://3cldpounk7fj" path="res://assets/pixil-frame-0 (10).png" id="9_8hy7g"]
+[ext_resource type="AudioStream" uid="uid://d4kg7y8u8v1vk" path="res://assets/Final fantasy 1 Pixel Remaster Battle Theme - Daniel Cortina (youtube).mp3" id="10_3b5gh"]
+[ext_resource type="Texture2D" uid="uid://b410d0qeei5sp" path="res://assets/pixil-frame-0 (190).png" id="11_8lvrn"]
+[ext_resource type="AudioStream" uid="uid://7p5b4sdngsrf" path="res://assets/8 Bit Game Sounds Pack   Testament Creative - Testament Creative (youtube) (online-video-cutter.com) (online-video-cutter.com).mp3" id="11_b8cct"]
+[ext_resource type="Texture2D" uid="uid://dbe0owp1ol5kv" path="res://assets/pixil-frame-0 (191).png" id="12_5sdth"]
+[ext_resource type="AudioStream" uid="uid://bataxoem36u05" path="res://assets/442772__qubodup__slime-squish.wav" id="12_ex87m"]
+[ext_resource type="Texture2D" uid="uid://doj5gmk4gk76d" path="res://assets/splash04.png" id="16_jsbqy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8hy7g"]
+texture = ExtResource("5_c8w5r")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7y3un"]
+texture = ExtResource("6_ic1y7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glme2"]
+texture = ExtResource("7_jsbqy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7bl2"]
+texture = ExtResource("9_8hy7g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_imppe"]
+texture = ExtResource("7_r7bl2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyjxj"]
+texture = ExtResource("8_r7bl2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xdsp7"]
+texture = ExtResource("8_r7bl2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dpug"]
+texture = ExtResource("8_r7bl2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fajm7"]
+texture = ExtResource("11_8lvrn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fwp6c"]
+texture = ExtResource("12_5sdth")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4woyv"]
+texture = ExtResource("12_5sdth")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lvrn"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5sdth"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fajm7"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwp6c"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4woyv"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpr71"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3f31v"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_at32v"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8dea"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd7k1"]
+atlas = ExtResource("16_jsbqy")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l7xky"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lvrn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5sdth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fajm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fwp6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4woyv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpr71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3f31v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_at32v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8dea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fd7k1")
+}],
+"loop": false,
+"name": &"default",
+"speed": 35.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1751232998]
+script = ExtResource("1_pth00")
+
+[node name="background" type="Sprite2D" parent="." unique_id=2087943290]
+position = Vector2(604, 328.00003)
+scale = Vector2(1.7319444, 1.6541667)
+texture = ExtResource("2_cmmtb")
+
+[node name="inimigo" type="Sprite2D" parent="." unique_id=989413370]
+position = Vector2(990, 198)
+scale = Vector2(13.718749, 12.124998)
+texture = ExtResource("3_cwipj")
+
+[node name="player" type="Sprite2D" parent="." unique_id=881130964]
+position = Vector2(170.49998, 475.5)
+scale = Vector2(18.3125, 15.031249)
+texture = ExtResource("4_cwbht")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1495912247]
+position = Vector2(577, 323)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=761169493]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1593341156]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1327144271]
+offset_top = 469.0
+offset_right = 1154.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8hy7g")
+
+[node name="MenuAcoes" type="HBoxContainer" parent="CanvasLayer/Panel" unique_id=488187417]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 1153.0
+offset_bottom = 178.0
+theme_override_constants/separation = 180
+alignment = 1
+
+[node name="ataque" type="Button" parent="CanvasLayer/Panel/MenuAcoes" unique_id=669214552]
+custom_minimum_size = Vector2(170, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 3.11
+theme_override_styles/normal = SubResource("StyleBoxTexture_7y3un")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7y3un")
+theme_override_styles/hover = SubResource("StyleBoxTexture_glme2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_r7bl2")
+text = "ataque"
+
+[node name="Defender" type="Button" parent="CanvasLayer/Panel/MenuAcoes" unique_id=1403679211]
+custom_minimum_size = Vector2(170, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_imppe")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wyjxj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xdsp7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_5dpug")
+text = "Ataque
+Duplo"
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel/MenuAcoes" unique_id=2105716461]
+custom_minimum_size = Vector2(170, 120)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_fajm7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fwp6c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4woyv")
+text = "Item"
+
+[node name="MenuItens" type="HBoxContainer" parent="CanvasLayer/Panel" unique_id=1577095972]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 0
+offset_left = -2.0
+offset_top = 238.0
+offset_right = 1159.0
+offset_bottom = 389.0
+theme_override_constants/separation = 180
+alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=780018198]
+layout_mode = 2
+text = "TEste"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=1985829645]
+layout_mode = 2
+text = "TEST2"
+
+[node name="Button3" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=2129304110]
+layout_mode = 2
+text = "TEST3
+"
+
+[node name="Voltar" type="Button" parent="CanvasLayer/Panel/MenuItens" unique_id=82680549]
+layout_mode = 2
+text = "TEST4"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=440901311]
+stream = ExtResource("10_3b5gh")
+volume_db = -20.429
+autoplay = true
+
+[node name="hit" type="AudioStreamPlayer2D" parent="." unique_id=1275839383]
+stream = ExtResource("11_b8cct")
+
+[node name="hit_inimigo" type="AudioStreamPlayer2D" parent="." unique_id=1399457345]
+stream = ExtResource("12_ex87m")
+
+[node name="EfeitoDano" type="AnimatedSprite2D" parent="." unique_id=793012337]
+visible = false
+position = Vector2(985.00006, 178)
+scale = Vector2(4.265625, 3.8125)
+sprite_frames = SubResource("SpriteFrames_l7xky")
+frame = 9
+frame_progress = 1.0
+
+[connection signal="pressed" from="CanvasLayer/Panel/MenuAcoes/ataque" to="." method="_on_ataque_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/MenuAcoes/Defender" to="." method="_on_defender_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/MenuAcoes/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/MenuItens/Voltar" to="." method="_on_voltar_pressed"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
