@@ -28,4 +28,4 @@ Para abrir, testar ou expandir este projeto de pesquisa, siga as instruções ab
 1. Faça o download e instale a **Godot Engine v4.x** (disponível em [godotengine.org](https://godotengine.org)).
 2. Faça o clone deste repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/O-Explorador-de-Ecos.git](https://github.com/SEU_USUARIO/O-Explorador-de-Ecos.git)
+   git clone [https://github.com/Taichi-Hatano-code/O-Explorador-de-Ecos.git](https://github.com/Taichi-Hatano-code/O-Explorador-de-Ecos.git)
